@@ -138,6 +138,7 @@ nav:focus-within .navDrop {
 }
 .info button img {
     transition: transform .5s;
+    padding: 2px;
 }
 .info:hover button img,
 .info button:focus img {
