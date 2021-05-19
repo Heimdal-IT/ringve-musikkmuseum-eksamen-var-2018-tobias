@@ -1,9 +1,91 @@
+<!DOCTYPE html>
 <html>
+    <head>
+        <meta charset="utf-8">
+        <title>Musikkmuseum</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="ringve-musikkmuseum-eksamen-var-2018-tobias-main/V2018-Museum-filer/fagott.jpg">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <button class="hamburger">
+                    <svg width="60px" height="60px">
+                        <circle cx="30px" cy="30px" r="28px" stroke-width="1px" stroke="#000" fill="rgba(0,0,0,0)" />
+                        <rect width="30px" height="2px" rx="2px" y="19px" x="15px" />
+                        <rect width="30px" height="2px" rx="2px" y="29px" x="15px" />
+                        <rect width="30px" height="2px" rx="2px" y="39px" x="15px" />
+                    </svg>
+                </button>
+                <div class="navDrop">
+                    <ul>
+                        <li class="navLink"><a href="#">Test Link</a></li>
+                        <li class="navLink"><a href="#">Test Link</a></li>
+                        <li class="navLink"><a href="#">Test Link</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <h1><a href="#">Ringve Musikkmuseum</a></h1>
+            <ul class="infoCont">
+                <li class="info">
+                    <button>
+                        <img alt="aapningstider" src="ringve-musikkmuseum-eksamen-var-2018-tobias-main/V2018-Museum-filer/aapningstider.jpg">
+                    </button>
+                    <div class="dropInfo">
+                        <div>
+                            <h3>Åpningstider</h3>
+                            <p>
+                                Tirsdag – søndag 11.00-16.00
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li class="info">
+                    <button>
+                        <img alt="priser" src="ringve-musikkmuseum-eksamen-var-2018-tobias-main/V2018-Museum-filer/priser.jpg">
+                    </button>
+                    <div class="dropInfo">
+                        <div>
+                            <h3>Billetter</h3>
+                            <p>
+                                Voksen: 120 kr <br>
+                                Student/honnør: 100 kr <br>
+                                Barn (0-15 år): Gratis
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li class="info">
+                    <button>
+                        <img alt="informasjon" src="ringve-musikkmuseum-eksamen-var-2018-tobias-main/V2018-Museum-filer/informasjon.jpg">
+                    </button>
+                    <div class="dropInfo">
+                        <div>
+                            <h3>Informasjon</h3>
+                            <p>
+                                Besøksadresse: Lade allé 60, 7041 Trondheim 73 87 02 80 post@ringve.no <br>
+                                Postadresse: Postboks 6289 Torgarden, 7489 Trondheim
+                            </p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </header>
+        <main>
+            <div class="galleryCont">
+                <img alt="bildegalleri" id="galleryImg" src="ringve-musikkmuseum-eksamen-var-2018-tobias-main/V2018-Museum-filer/intro1.jpg">
+                <button class="prevImg">&#10148;</button>
+                <button class="nextImg">&#10148;</button>
+                <div class="galleryRadios">
+                    <!--<input type="radio" name="gallery">
+                    <input type="radio" name="gallery">
+                    <input type="radio" name="gallery">
+                    <input type="radio" name="gallery">-->
+                </div>
+            </div>
+        </main>
 
-
-
-
-
-
-
+        <script src="imageGallery.js"></script>
+    </body>
 </html>
+
