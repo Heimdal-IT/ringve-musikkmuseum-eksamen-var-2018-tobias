@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Oppgave 3</title>
+    <link rel="stylesheet" href="3.css" />
+  </head>
+
+  <body>
+    <div id="ramme">
+      <div id="startTekstLag">
+        <h3>Trykk på instrumentet som passer med lyden</h3>
+
+        <div id="bildeLag">
+          <img onclick="sjekkValg(0)" src="fagott.jpg" /><img
+            onclick="sjekkValg(1)"
+            src="floyte.gif"
+          /><img onclick="sjekkValg(2)" src="klarinett.jpg" /><img
+            onclick="sjekkValg(3)"
+            src="obo.jpg"
+          /><img onclick="sjekkValg(4)" src="valthorn.jpg" />
+        </div>
+        <div id="bildeTekstLag">
+          <table align="center">
+            <tbody>
+              <tr id="rad">
+                <td>FAGOTT</td>
+                <td>FLØYTE</td>
+                <td>KLARINETT</td>
+                <td>OBO</td>
+                <td>VALTHORN</td>
+              </tr>
+            </tbody>
+          </table>
+          <p id="highscoreSystem">Best Score: 0</p>
+        </div>
+        <div id="knappeLag">
+          <button id="btnLyd">Spill lyd</button>
+        </div>
+      </div>
+      <div id="infoLag">Antall forsøk: 0</div>
+    </div>
+
+    <audio src="riktig.mp3" id="lydRiktig"></audio>
+    <audio src="feil.mp3" id="lydFeil"></audio>
+    <audio id="lydTilfeldig"></audio>
+
+    <script src="3.js"></script>
+  </body>
+</html>

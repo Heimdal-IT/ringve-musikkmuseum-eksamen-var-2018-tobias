@@ -1,0 +1,66 @@
+* body {
+  font-family: sans-serif;
+  background-image: url("Background.jpg");
+}
+#ramme {
+  position: absolute;
+  width: 90%;
+  height: auto;
+  top: 50px;
+}
+#startTekst {
+  position: absolute;
+  left: 100px;
+  top: 10px;
+  height: auto;
+  width: auto;
+  font-size: 20px;
+}
+h3,
+#highscoreSystem {
+  color: rgb(255, 255, 255);
+  width: 670px;
+  text-align: center;
+}
+#bildeLag {
+  position: absolute;
+  width: 690px;
+  height: 125px;
+  text-align: center;
+  cursor: pointer;
+}
+#bildeTekstLag {
+  position: absolute;
+  top: 200px;
+  width: 670px;
+  height: 30px;
+}
+img {
+  height: 120px;
+  margin-right: 10px;
+  border: solid 1px rgb(0, 0, 0);
+}
+#btnLyd {
+  position: absolute;
+  top: 300px;
+  width: 60px;
+  background-color: rgb(0, 0, 0);
+  margin-left: 15px;
+  border: 0;
+  color: white;
+  height: 60px;
+  border-radius: 20px;
+}
+#infoLag {
+  position: absolute;
+  text-align: center;
+  top: 340px;
+  width: 670px;
+  color: white;
+}
+
+td {
+  width: 125px;
+  text-align: center;
+  color: white;
+}
