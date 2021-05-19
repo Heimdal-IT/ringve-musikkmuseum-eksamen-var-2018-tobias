@@ -42,6 +42,15 @@ function gallerySetImg(n) {
 btnPrev.addEventListener("click", galleryPrevImg);
 btnNext.addEventListener("click", galleryNextImg);
 
+document.addEventListener('keydown', function(e) {
+    if (e.keyCode === 37) {
+        galleryPrevImg();
+    } else if (e.keyCode === 39) {
+        galleryNextImg();
+    };
+});
+
+
 for (i = 0; i < galleryImages.length; i++) {
     let btn = document.createElement("input");
     btn.setAttribute("type", "radio");
