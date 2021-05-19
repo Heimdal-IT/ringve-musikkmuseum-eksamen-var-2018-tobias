@@ -195,8 +195,10 @@ main {
     font-size: 0;
 }
 #galleryImg {
-    width: 1000px;
-    height: 700px;
+    width: 100vw;
+    height: calc(100vh - var(--hdHeight));
+    object-fit: cover;
+    object-position: center;
 }
 .prevImg, 
 .nextImg {
@@ -228,7 +230,7 @@ main {
 .galleryRadios {
     display: inline-block;
     position: absolute;
-    bottom: 15px;
+    bottom: 30px;
     left: 50%;
     transform: translate(-50%);
 }
@@ -239,7 +241,7 @@ input[name="gallery"] {
     visibility: hidden;
     position: relative;
     transition: transform .3s, background-color .3s;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 input[name="gallery"]::after {
     visibility: visible;

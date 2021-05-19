@@ -1,9 +1,9 @@
 
 const galleryImages = [
-    "ringve-musikkmuseum-eksamen-var-2018-tobias-main/V2018-Museum-filer/intro1.jpg" ,
-    "ringve-musikkmuseum-eksamen-var-2018-tobias-main/V2018-Museum-filer/intro2.jpg" ,
-    "ringve-musikkmuseum-eksamen-var-2018-tobias-main/V2018-Museum-filer/intro3.jpg" ,
-    "ringve-musikkmuseum-eksamen-var-2018-tobias-main/V2018-Museum-filer/intro4.jpg"
+    "images/intro1.png" ,
+    "images/intro2.png" ,
+    "images/intro3.png" ,
+    "images/intro4.png"
 ];
 const galleryImg = document.getElementById("galleryImg");
 
