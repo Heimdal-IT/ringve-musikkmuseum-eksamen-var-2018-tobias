@@ -69,7 +69,7 @@ nav:hover .hamburger svg,
     position: absolute;
     top: calc(var(--hdHeight) + 0);
     left: -400px;
-    width: 260px;
+    width: 300px;
     opacity: 1;
     z-index: 2;
     transition: left .5s;
