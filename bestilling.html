@@ -7,25 +7,30 @@
   </head>
 
   <body>
-    <div id="ramme">
+    <!--boks slik at det blir lettere å style-->
+    <div id="boks">
       <h3>Arrangementer Vår 2018</h3>
       <img id="bilde" src="images/tabell.JPG" width="700" /><br />
       <p>Pris voksen: 100 kr - Pris barn: 50 kr</p>
 
+      <!--Arrangementer besøkende får velge fra-->
       <select id="velg">
         <option>Velg arrangement</option>
       </select>
       <p></p>
 
+      <!--Område for bestilling av biletter-->
       Antall billetter:
-      <input id="inpVoksen" type="number" min="0" max="10" value="0" /> Voksen
-      <input id="inpBarn" type="number" min="0" max="10" value="0" /> Barn
+      <input id="antallVoksen" type="number" min="0" max="10" value="0" />
+      Voksen
+      <input id="antallBarn" type="number" min="0" max="10" value="0" /> Barn
       <p></p>
       <button id="btnPris">Vis bestilling</button>
 
+      <!--Her skal bestillinger også komme fram-->
       <p id="ut">Velg arrangement/billetter.</p>
     </div>
-
-    <script src="bestilling.js"></script>
   </body>
+
+  <script src="bestilling.js"></script>
 </html>
