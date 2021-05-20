@@ -11,23 +11,30 @@
     <div id="boks">
       <h3>Arrangementer Vår 2018</h3>
       <img id="bilde" src="images/tabell.JPG" width="700" /><br />
-      <p>Pris voksen: 100 kr - Pris barn: 50 kr</p>
+      <p id="prisInfo">Pris voksen: 100 kr - Pris barn: 50 kr</p>
 
       <!--Arrangementer besøkende får velge fra-->
       <select id="velg">
         <option>Velg arrangement</option>
+        <!--<option>Trondheim kammermusikkfestival - 1. juni</option>
+        <option>Spill opp! - 4. juni</option>
+        <option>Onsdagskonsert - 6. juni</option>
+        <option>Juiogat: Joik for folk - 9. juni</option> -->
       </select>
       <p></p>
 
       <!--Område for bestilling av biletter-->
-      Antall billetter:
+      <label>Antall billetter:</label>
       <input id="antallVoksen" type="number" min="0" max="10" value="0" />
-      Voksen
-      <input id="antallBarn" type="number" min="0" max="10" value="0" /> Barn
-      <p></p>
+      <label>Voksen</label>
+      <input id="antallBarn" type="number" min="0" max="10" value="0" />
+      <label>Barn</label>
       <button id="btnPris">Vis bestilling</button>
+    </div>
 
+    <div id="bestilling">
       <!--Her skal bestillinger også komme fram-->
+      <h3 id="bestiltOverskrift">Dine bestilte billetter</h3>
       <p id="ut">Velg arrangement/billetter.</p>
     </div>
   </body>

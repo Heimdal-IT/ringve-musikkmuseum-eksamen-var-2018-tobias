@@ -1,33 +1,100 @@
+/*animasjon effekt*/
+@keyframes wiggle {
+  0% {
+    transform: rotate(0) scale(1);
+  }
+  25% {
+    transform: rotate(10deg) scale(1.025);
+  }
+  50% {
+    transform: rotate(-10deg) scale(1.05);
+  }
+  75% {
+    transform: rotate(10deg) scale(1.075);
+  }
+  100% {
+    transform: rotate(0) scale(1.1);
+  }
+}
+/*animasjon effekt*/
+
 body {
   font-family: sans-serif;
+  background-image: url(images/spotlight.jpg);
+  background-size: cover;
 }
+
+label {
+  color: white;
+}
+
+p {
+  color: white;
+}
+
 #boks {
   position: absolute;
   top: 20px;
-  left: 25%;
+  padding-left: 2%;
   width: 700px;
   height: auto;
   font-size: 20px;
-  text-align: center;
 }
 
 h3 {
   color: lightsteelblue;
+  text-align: center;
 }
 input {
   text-align: right;
   width: 50px;
 }
+
+#prisInfo {
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
 #velg {
-  width: 100%;
+  width: 50%;
   height: 25px;
   font-size: 15px;
 }
+
+#btnPris {
+  border-radius: 20px;
+  margin-left: 2%;
+}
+
 button,
 object {
-  width: 100%;
-  background-color: skyblue;
+  width: 20%;
+  background-color: black;
   color: white;
   border: 0;
   height: 30px;
+}
+
+button:hover {
+  animation-name: wiggle;
+  animation-duration: 0.7s;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+#bestiltOverskrift {
+}
+
+#bestilling {
+  position: absolute;
+  top: 20%;
+  right: 3%;
+  width: 300px;
+  padding-right: 3%;
+}
+
+#ut {
+  right: 10%;
+  top: 40%;
 }
