@@ -57,17 +57,14 @@ function opprettBilder() {
 }
 
 btnLyd.onclick = function () {
-  spiltLyd = true;
   if (gjettet) {
     tilfeldigLydIndeks = Math.floor(Math.random() * instrumentlyd.length);
-    forrigeLyd = tilfeldigLydIndeks;
     gjettet = false;
-  } else {
-    tilfeldigLydIndeks = forrigeLyd;
-  }
-
+  };
+  
   lydTilfeldig.src = instrumentlyd[tilfeldigLydIndeks];
   lydTilfeldig.play();
+  spiltLyd = true;
 };
 
 function sjekkValg(valgtBildeIndeks) {
